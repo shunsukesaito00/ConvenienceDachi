@@ -1,0 +1,29 @@
+name: ConvenienceDachi
+options:
+  bundleIdPrefix: com.shunsukesaito
+  deploymentTarget:
+    iOS: "17.0"
+settings:
+  base:
+    MARKETING_VERSION: 1.0
+    CURRENT_PROJECT_VERSION: 1
+    DEVELOPMENT_TEAM: ""
+targets:
+  ConvenienceDachi:
+    type: application
+    platform: iOS
+    sources:
+      - ConvenienceDachi
+    info:
+      path: ConvenienceDachi/Resources/Info.plist
+      properties:
+        CFBundleDisplayName: コンビニ断ち
+        UILaunchScreen: {}
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationPortrait
+        NSUserNotificationsUsageDescription: 毎日の記録をやさしく思い出すために通知を使います。
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.shunsukesaito.ConvenienceDachi
+        INFOPLIST_FILE: ConvenienceDachi/Resources/Info.plist
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
